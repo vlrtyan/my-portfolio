@@ -1,0 +1,83 @@
+@import '../utils/styles.scss';
+
+.portfolio {
+    margin: $margin;
+}
+
+.portfolio__header {
+    @include section-header;
+}
+
+.portfolio__projects {}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 160px;
+    column-gap: 120px;
+}
+
+.project__name {
+    color: $pink;
+    text-shadow: 5px 5px 5px rgb(157, 157, 157);
+    font-size: 36px;
+    margin: 0 0 30px;
+}
+
+.project__description {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 46px;
+}
+
+.project__stack {
+    @include list;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.project__technology {
+    @include bubble;
+    background-color: rgba(1, 1, 1, 0.1);
+
+    &:hover {
+        background-color: rgba(243, 214, 244, 0.3);
+
+    }
+}
+
+.project__type {
+    @include bubble;
+    background-color: #0A5448;
+    color: rgb(225, 225, 225);
+
+    &:hover {
+        background-color: rgba(10, 84, 72, 0.8);
+    }
+}
+
+.project__links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.project__link {
+    @include button;
+}
+
+.project__image {
+    height: 250px;
+}
+
+.project_view_reverse {
+    flex-direction: row-reverse;
+}

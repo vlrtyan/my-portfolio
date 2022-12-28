@@ -1,0 +1,93 @@
+@import '../utils/styles.scss';
+
+@keyframes animation {
+    0% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.about-me {
+    padding-top: 180px;
+    margin: $margin;
+}
+
+.about-me__header {
+    font-size: 76px;
+    margin: 0 0 180px;
+    line-height: 1.2;
+}
+
+.about-me__span {
+    color: #F3D6F4;
+    text-shadow: 5px 5px 5px rgb(157, 157, 157);
+}
+
+.about-me__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 80px;
+    // background-color: rgba(227, 227, 227, 0.4);
+    // outline: $pink 8px double;
+}
+
+.role {
+    opacity: 0;
+    animation: animation 5s forwards infinite;
+    animation-delay: 2.5s;
+}
+
+.about-me__stack {
+    @include list;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 60px;
+    max-width: 800px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.about-me__subtitle {
+    @include bubble;
+    color: $green;
+    background-color: $pink;
+    border: 3px $green double;
+}
+
+.about-me__technology {
+    @include bubble;
+    text-decoration: none;
+    color: $pink;
+    background-color: $green;
+
+    &:hover {
+        background-color: rgba(10, 84, 72, 0.7);
+    }
+}
+
+.about-me__portrait {
+    width: 400px;
+    margin-right: 80px;
+    margin-top: 60px;
+}
+
+.about-me__bio {
+    width: 600px;
+    text-align: justify;
+    margin: 60px;
+    font-weight: 500;
+}

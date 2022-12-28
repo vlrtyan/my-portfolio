@@ -18,43 +18,35 @@
         </header>
 
         <main class="content">
-            <section class="section about-me" id="about-me">
-                <h1 class="section__title about-me__title"><span class="section__span">Привет!</span><br>Меня зовут
+            <section class="about-me" id="about-me">
+                <h1 class="about-me__header"><span class="about-me__span">Привет!</span><br>Меня зовут
                     Валерия,
-                    я<br>front-end разработчица<br><span class="role section__span">и футбольная фанатка</span></h1>
+                    я<br>front-end разработчица<br><span class="role about-me__span">и футбольная фанатка</span></h1>
                 <div class="about-me__info">
                     <img class="about-me__portrait" src="<%=require('./images/me.png')%>" alt="Валерия Тян" />
-                    <p class="about-me__bio">Текст Текст Текст Текст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст
-                        Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст
-                        ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст
-                        Текст ТекстТекст Текст Текст</p>
-                    <p class="about-me__bio">Текст Текст Текст Текст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст
-                        Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст
-                        ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст
-                        Текст ТекстТекст Текст Текст</p>
+                    <p class="about-me__bio">Сейчас я работаю над pet-проектами, самостоятельно изучаю TypeScript.</p>
                 </div>
-                <p class="about-me__header">Что я умею:</p>
+                <!-- <p class="about-me__subtitle"></p> -->
                 <ul class="about-me__stack">
-                    <li><a class="about-me__technology" href="" target="_blank">HTML</a></li>
-                    <li><a class="about-me__technology" href="" target="_blank">CSS</a></li>
-                    <li><a class="about-me__technology" href="" target="_blank">JavaScript</a></li>
-                    <li><a class="about-me__technology" href="" target="_blank">React</a></li>
-                    <li><a class="about-me__technology" href="" target="_blank">Node.js</a></li>
-                    <li><a class="about-me__technology" href="" target="_blank">Express.js</a></li>
-                    <li><a class="about-me__technology" href="" target="_blank">Webpack</a></li>
-                    <li><a class="about-me__technology" href="" target="_blank">MongoDB</a></li>
-                    <li><a class="about-me__technology" href="" target="_blank">Git</a></li>
-                    <li><a class="about-me__technology" href="" target="_blank">Figma</a></li>
-                    <li><a class="about-me__technology" href="" target="_blank">API</a></li>
+                    <li class="about-me__subtitle">ЧТО Я УМЕЮ</li>
+                    <li class="about-me__technology">HTML</li>
+                    <li class="about-me__technology">CSS</li>
+                    <li class="about-me__technology">JavaScript</li>
+                    <li class="about-me__technology">React</li>
+                    <li class="about-me__technology">Node.js</li>
+                    <li class="about-me__technology">Webpack</li>
+                    <li class="about-me__technology">MongoDB</li>
+                    <li class="about-me__technology">Git</li>
+                    <li class="about-me__technology">API</li>
                 </ul>
-                <p class="about-me__header">Что я изучаю:</p>
                 <ul class="about-me__stack">
-                    <li><a class="about-me__technology" href="" target="_blank">Typescript</a></li>
-                    <li><a class="about-me__technology" href="" target="_blank">SCSS</a></li>
+                    <li class="about-me__subtitle">ЧТО Я ИЗУЧАЮ</li>
+                    <li class="about-me__technology">Typescript</li>
+                    <li class="about-me__technology">SCSS</li>
                 </ul>
             </section>
-            <section class="section portfolio" id="portfolio">
-                <h2 class="section__title">Мои работы</h2>
+            <section class="portfolio" id="portfolio">
+                <h2 class="portfolio__header">Мои работы</h2>
                 <div class="portfolio__projects">
                     <div class="project">
                         <div class="project__info">
@@ -73,12 +65,12 @@
                                 <li class="project__technology">Адаптивная верстка</li>
                                 <li class="project__type">Учебный проект</li>
                             </ul>
-                            <ul class="project__links">
+                            <!-- <ul class="project__links">
                                 <li class="project__link"><a href="https://github.com/vlrtyan/movies-explorer-frontend"
                                         target="_blank"></a>Репозиторий GitHub</li>
                                 <li class="project__link"><a href="https://movies.vlrtyan.nomore.nomoredomains.icu/"
                                         target="_blank"></a>Сайт</li>
-                            </ul>
+                            </ul> -->
                         </div>
                         <img class="project__image" src="<%=require('./images/movies-mockup.png')%>" />
                     </div>
@@ -98,12 +90,12 @@
                                 <li class="project__technology">Адаптивная верстка</li>
                                 <li class="project__type">Учебный проект</li>
                             </ul>
-                            <ul class="project__links">
+                            <!-- <ul class="project__links">
                                 <li class="project__link"><a href="https://github.com/vlrtyan/mesto"
                                         target="_blank"></a>Репозиторий GitHub</li>
                                 <li class="project__link"><a href="https://vlrtyan.github.io/mesto/"
                                         target="_blank"></a>Сайт</li>
-                            </ul>
+                            </ul> -->
                         </div>
                         <img class="project__image" src="<%=require('./images/mesto-mockup.png')%>" />
                     </div>
@@ -120,12 +112,12 @@
                                 <li class="project__technology">Адаптивная верстка</li>
                                 <li class="project__type">Учебный проект</li>
                             </ul>
-                            <ul class="project__links">
+                            <!-- <ul class="project__links">
                                 <li class="project__link"><a href="https://github.com/vlrtyan/russian-travel"
                                         target="_blank"></a>Репозиторий GitHub</li>
                                 <li class="project__link"><a href="https://vlrtyan.github.io/russian-travel"
                                         target="_blank"></a>Сайт</li>
-                            </ul>
+                            </ul> -->
                         </div>
                         <img class="project__image" src="<%=require('./images/russian-travel-moclup.png')%>" />
                     </div>
@@ -141,16 +133,16 @@
                                 <li class="project__technology">Анимация</li>
                                 <li class="project__type">Учебный проект</li>
                             </ul>
-                            <ul class="project__links">
+                            <!-- <ul class="project__links">
                                 <li class="project__link"><a href="https://github.com/vlrtyan/how-to-learn"
                                         target="_blank"></a>Репозиторий GitHub</li>
-                            </ul>
+                            </ul> -->
                         </div>
                         <img class="project__image" src="<%=require('./images/how-to-learn-mockup.png')%>" />
                     </div>
                 </div>
             </section>
-            <section class="section contacts" id="contacts">
+            <section class="contacts" id="contacts">
                 <h2 class="section__title">Мои контакты</h2>
                 <ul class="contacts__list">
                     <li><a class="social-media" href="https://t.me/vlrtyan" target="_blank"><img
@@ -163,8 +155,6 @@
                                 class="social-media__logo" src="<%=require('./images/logos/github-logo.svg')%>"
                                 alt="Логотип GitHub" />GitHub</a></li>
                 </ul>
-                <a class="contacts__button" href="./documents/Тян_Валерия_Резюме.pdf" target="_blank" download>Скачать
-                    резюме</a>
                 <a class="contacts__button" href="mailto: vlrtyan@yandex.ru">Отправить письмо</a>
             </section>
         </main>

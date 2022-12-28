@@ -1,0 +1,36 @@
+@import '../utils/styles.scss';
+
+.contacts {
+    margin: $margin;
+    margin-bottom: 0;
+    padding-bottom: 220px;
+}
+
+.contacts__list {
+    @include list;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: $green;
+    text-decoration: none;
+    margin-bottom: 15px;
+    transition: $transition;
+    width: fit-content;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.social-media__logo {
+    height: 30px;
+    margin-right: 12px;
+}
+
+.contacts__button {
+    @include button;
+    text-decoration: none;
+}

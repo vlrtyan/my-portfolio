@@ -1,0 +1,39 @@
+@import '../utils/styles.scss';
+
+.header {
+    width: 100%;
+    margin: 0 0 80px;
+    position: fixed;
+    background-color: rgba(214, 214, 214, 0.9);
+    z-index: 10;
+}
+
+.navigation {
+    margin: 0 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* outline: #F3D6F4 dotted 5px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: rgba(245, 245, 245); */
+    padding: 25px 0; 
+}
+
+.navigation__link {
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.3s;
+    color: $green;
+    font-weight: 900;
+    line-height: 18px;
+
+    &:hover {
+        color: $pink;
+        font-size: 18px;
+    }
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+}
