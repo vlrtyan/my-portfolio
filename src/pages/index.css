@@ -3,6 +3,8 @@ $yellow-green: #D4DE64;
 $green: #0A5448;
 $honeydew: #F3FDF2; */
 
+@import url(../vendor/normalize.css);
+
 .page {
     background-color: whitesmoke;
     min-width: 320px;
@@ -77,6 +79,18 @@ $honeydew: #F3FDF2; */
     background-color: rgba(227, 227, 227, 0.2);
     outline: #F3D6F4 8px double;
 }
+
+.role {
+    opacity: 0;
+    animation: animation 5s forwards infinite;
+    animation-delay: 2.5s;
+  }
+  
+  @keyframes animation {
+    0% { opacity: 1 }
+    50% { opacity: 0 }
+    100% { opacity: 1 }
+  }
 
 .about-me__stack {
     padding: 0;

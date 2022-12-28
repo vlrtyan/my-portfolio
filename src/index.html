@@ -4,8 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./pages/index.css">
-    <link rel="stylesheet" href="./vendor/normalize.css">
     <title>Валерия Тян</title>
 </head>
 
@@ -25,7 +23,7 @@
                     Валерия,
                     я<br>front-end разработчица<br><span class="role section__span">и футбольная фанатка</span></h1>
                 <div class="about-me__info">
-                    <img class="about-me__portrait" src="./images/me.png" alt="Валерия Тян" />
+                    <img class="about-me__portrait" src="<%=require('./images/me.png')%>" alt="Валерия Тян" />
                     <p class="about-me__bio">Текст Текст Текст Текст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст
                         Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст
                         ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст Текст ТекстТекст
@@ -82,7 +80,7 @@
                                         target="_blank"></a>Сайт</li>
                             </ul>
                         </div>
-                        <img class="project__image" src="./images/movies-mockup.png" />
+                        <img class="project__image" src="<%=require('./images/movies-mockup.png')%>" />
                     </div>
                     <div class="project project_view_reverse">
                         <div class="project__info">
@@ -107,7 +105,7 @@
                                         target="_blank"></a>Сайт</li>
                             </ul>
                         </div>
-                        <img class="project__image" src="./images/mesto-mockup.png" />
+                        <img class="project__image" src="<%=require('./images/mesto-mockup.png')%>" />
                     </div>
                     <div class="project">
                         <div class="project__info">
@@ -129,7 +127,7 @@
                                         target="_blank"></a>Сайт</li>
                             </ul>
                         </div>
-                        <img class="project__image" src="./images/russian-travel-moclup.png" />
+                        <img class="project__image" src="<%=require('./images/russian-travel-moclup.png')%>" />
                     </div>
                     <div class="project project_view_reverse">
                         <div class="project__info">
@@ -148,7 +146,7 @@
                                         target="_blank"></a>Репозиторий GitHub</li>
                             </ul>
                         </div>
-                        <img class="project__image" src="./images/how-to-learn-mockup.png" />
+                        <img class="project__image" src="<%=require('./images/how-to-learn-mockup.png')%>" />
                     </div>
                 </div>
             </section>
@@ -156,13 +154,13 @@
                 <h2 class="section__title">Мои контакты</h2>
                 <ul class="contacts__list">
                     <li><a class="social-media" href="https://t.me/vlrtyan" target="_blank"><img
-                                class="social-media__logo" src="./images/logos/telegram-logo.svg"
+                                class="social-media__logo" src="<%=require('./images/logos/telegram-logo.svg')%>"
                                 alt="Логотип Telegram" />Telegram</a></li>
                     <li><a class="social-media" href="https://www.linkedin.com/in/vlrtyan/" target="_blank"><img
-                                class="social-media__logo" src="./images/logos/linkedin-logo.svg"
+                                class="social-media__logo" src="<%=require('./images/logos/linkedin-logo.svg')%>"
                                 alt="Логотип LinkedIn" />LinkedIn</a></li>
                     <li><a class="social-media" href="https://github.com/vlrtyan" target="_blank"><img
-                                class="social-media__logo" src="./images/logos/github-logo.svg"
+                                class="social-media__logo" src="<%=require('./images/logos/github-logo.svg')%>"
                                 alt="Логотип GitHub" />GitHub</a></li>
                 </ul>
                 <a class="contacts__button" href="./documents/Тян_Валерия_Резюме.pdf" target="_blank" download>Скачать
@@ -174,7 +172,6 @@
         <footer class="header"></footer>
 
     </div>
-    <script src="script.js"></script>
 </body>
 
 </html>
