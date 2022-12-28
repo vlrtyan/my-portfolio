@@ -41,21 +41,34 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/i,
+        test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
+              sourceMap: true,
               importLoaders: 1,
             },
           },
           {
             loader: 'sass-loader',
-            options: true,
+            options: {
+              sourceMap: true,
+            },
           },
           'postcss-loader',
         ],
+      },
+      {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, {
+          loader: 'css-loader',
+          options: {
+            importLoaders: 1,
+          },
+        },
+        'postcss-loader'],
       },
     ],
   },
