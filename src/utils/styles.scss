@@ -19,11 +19,12 @@ $padding-top: 130px;
 
 @mixin button {
     color: $pink;
-    padding: 12px;
+    padding: 4px 10px;
     background-color: $green;
     box-shadow: 3px 3px $pink;
     transition: $transition;
     cursor: pointer;
+    text-decoration: none;
 
     &:hover {
         background-color: $pink;

@@ -5,10 +5,14 @@
     position: fixed;
     background-color: rgba(214, 214, 214, 0.9);
     z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navigation {
-    margin: 0 120px;
+    margin-right: 120px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -27,11 +31,15 @@
     font-weight: 900;
 
     &:hover {
-        color: $pink;
-        text-shadow: 1px 0 10px rgb(124, 124, 124);
+        text-shadow: 0 7px 0 $pink;
     }
 
     &:last-of-type {
         margin-right: 0;
     }
+}
+
+.header__lang {
+    margin: 0 0 0 120px;
+    font-weight: 900;
 }
