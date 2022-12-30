@@ -2,12 +2,18 @@
 
 .contacts {
     margin: $margin;
+    padding-top: $padding-top;
     margin-bottom: 0;
     padding-bottom: 220px;
 }
 
+.contacts__header {
+    @include section-header;
+}
+
 .contacts__list {
     @include list;
+    margin-bottom: 20px;
 }
 
 .social-media {
@@ -19,6 +25,7 @@
     margin-bottom: 15px;
     transition: $transition;
     width: fit-content;
+    font-weight: 500;
 
     &:hover {
         opacity: 0.5;

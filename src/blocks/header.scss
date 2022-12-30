@@ -2,7 +2,6 @@
 
 .header {
     width: 100%;
-    margin: 0 0 80px;
     position: fixed;
     background-color: rgba(214, 214, 214, 0.9);
     z-index: 10;
@@ -26,11 +25,10 @@
     transition: 0.3s;
     color: $green;
     font-weight: 900;
-    line-height: 18px;
 
     &:hover {
         color: $pink;
-        font-size: 18px;
+        text-shadow: 1px 0 10px rgb(124, 124, 124);
     }
 
     &:last-of-type {
