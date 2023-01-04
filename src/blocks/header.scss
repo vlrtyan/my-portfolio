@@ -9,7 +9,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 0;
+  padding: 30px 0;
 }
 
 .navigation {
@@ -61,13 +61,14 @@
 }
 
 @media screen and (max-width: 767px) {
-  .header {
-    padding: 35px 0;
-  }
   .navigation {
     margin-right: 16px;
   }
   .header__lang {
     margin: 0 0 0 16px;
+    font-size: 16px;
+  }
+  .navigation__link {
+    font-size: 16px;
   }
 }

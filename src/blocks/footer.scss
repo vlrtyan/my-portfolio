@@ -2,7 +2,7 @@
 
 .footer {
   background-color: $pink;
-  padding: 25px 148px;
+  padding: 30px 148px;
   position: relative;
 }
 
@@ -28,7 +28,7 @@
 
 @media screen and (max-width: 1279px) {
   .footer {
-    padding: 25px 48px;
+    padding: 30px 48px;
   }
 
   .footer__image {
@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 1023px) {
   .footer {
-    padding: 25px 24px;
+    padding: 30px 24px;
   }
 
   .footer__image {
@@ -64,14 +64,14 @@
 
 @media screen and (max-width: 767px) {
   .footer {
-    padding: 35px 16px;
+    padding: 30px 16px;
   }
 
   .footer__copyright {
     font-size: 16px;
   }
   .footer__image {
-    height: 220px;
+    height: 200px;
   }
 
   .footer__image_left {
