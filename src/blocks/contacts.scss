@@ -4,7 +4,7 @@
   @include margin;
   @include padding-top;
   margin-bottom: 0;
-  padding-bottom: 230px;
+  padding-bottom: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +17,7 @@
 }
 
 .contacts__text {
-  margin: 0 auto 50px;
+  margin: 0 auto 20px;
   text-align: center;
   line-height: 1.7;
   font-size: 20px;
@@ -65,6 +65,7 @@
 .contacts__button {
   @include button;
   font-size: 18px;
+  margin-bottom: 60px;
 }
 
 .contacts__span {
@@ -79,11 +80,11 @@
 
 @media screen and (max-width: 1023px) {
   .contacts {
-    padding-bottom: 380px;
+    padding-bottom: 200px;
   }
 
   .contacts__header {
-    margin-bottom: 150px;
+    margin-bottom: 110px;
   }
 
   .contacts__list {
@@ -91,9 +92,12 @@
     gap: 20px;
   }
 
+  .contacts__button {
+  margin-bottom: 100px;
+}
+
   .contacts__text {
-    margin: 0 auto 50px;
-  
+    margin-bottom: 30px;
     &:last-of-type {
       margin-bottom: 30px;
     }
@@ -102,18 +106,18 @@
 
 @media screen and (max-width: 767px) {
   .contacts {
-    padding-bottom: 60px;
+    padding-bottom: 100px;
   }
 
   .contacts__header {
-    margin-bottom: 40px;
+    margin-bottom: 100px;
   }
 
   .contacts__text {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .social-media {
-    font-size: 14px;
+    font-size: 18px;
   }
 }

@@ -147,6 +147,7 @@
 
   .project__header {
     flex-direction: column;
+    gap: 20px;
   }
 
   .project__name {
@@ -155,6 +156,7 @@
     overflow: visible;
     border: none;
     padding-right: 0;
+    text-shadow: 1px 0 5px rgb(112, 112, 112);
   }
 
   .project__description {
@@ -163,6 +165,11 @@
 
   .project__stack {
     justify-content: center;
+    gap: 9px;
+  }
+
+  .project__links {
+    gap: 20px;
   }
 }
 
@@ -180,20 +187,15 @@
   }
 
   .project__name {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .project__description {
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 30px;
   }
 
-  .project-link__logo {
-    height: 20px;
-  }
-
   .project__header {
-    gap: 12px;
     margin: 0 0 20px;
   }
 }

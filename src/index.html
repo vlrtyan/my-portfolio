@@ -10,20 +10,20 @@
 <body>
     <div class="page">
         <header class="header">
-            <p class="header__lang">English</p>
+            <p class="header__lang">En</p>
             <nav class="navigation">
-                <a class="navigation__link" href="#about-me" data-target="about-me" >Обо мне</a>
-                <a class="navigation__link" href="#portfolio"  data-target="portfolio">Мои работы</a>
+                <a class="navigation__link" href="#about-me" data-target="about-me">Обо мне</a>
+                <a class="navigation__link" href="#portfolio" data-target="portfolio">Мои работы</a>
                 <a class="navigation__link" href="#contacts" data-target="contacts">Контакты</a>
             </nav>
         </header>
 
         <main class="content">
-            <section class="about-me">
+            <section class="about-me" id="about-me">
                 <h1 class="about-me__header"><span class="about-me__span">Привет!</span><br>Меня зовут
                     Валерия,
                     я<br>front-end разработчица<br><span class="role about-me__span">и футбольная фанатка</span></h1>
-                <div class="about-me__info" id="about-me">
+                <div class="about-me__info">
                     <img class="about-me__portrait" src="<%=require('./images/me.png')%>" alt="Валерия Тян">
                     <p class="about-me__bio"> Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
                         Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
@@ -170,9 +170,9 @@
             <section class="contacts" id="contacts">
                 <h2 class="contacts__header">Контакты</h2>
                 <p class="contacts__text">Если вы хотите сделать совместный проект, получить моё резюме<br>или просто
-                    познакомиться, жмите -->
-                    <a class="contacts__button" href="mailto:vlrtyan@yandex.ru">Написать&nbsp;письмо</a>
+                    познакомиться, жмите:
                 </p>
+                <a class="contacts__button" href="mailto:vlrtyan@yandex.ru">Написать&nbsp;письмо</a>
                 <p class="contacts__text"><span class="contacts__span">Можно также найти меня здесь:</span></p>
                 <ul class="contacts__list">
                     <li><a class="social-media" href="https://t.me/vlrtyan" target="_blank"><img
