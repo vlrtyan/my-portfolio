@@ -85,6 +85,19 @@
   .contacts__header {
     margin-bottom: 150px;
   }
+
+  .contacts__list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contacts__text {
+    margin: 0 auto 50px;
+  
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -97,17 +110,7 @@
   }
 
   .contacts__text {
-    margin: 0 auto 50px;
     font-size: 15px;
-  
-    &:last-of-type {
-      margin-bottom: 20px;
-    }
-  }
-
-  .contacts__list {
-    flex-direction: column;
-    gap: 10px;
   }
 
   .social-media {
