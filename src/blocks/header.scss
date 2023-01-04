@@ -12,14 +12,10 @@
 }
 
 .navigation {
-    margin-right: 120px;
+    margin-right: 148px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    /* outline: #F3D6F4 dotted 5px;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    background-color: rgba(245, 245, 245); */
     padding: 25px 0; 
 }
 
@@ -40,6 +36,15 @@
 }
 
 .header__lang {
-    margin: 0 0 0 120px;
+    margin: 0 0 0 148px;
     font-weight: 900;
+}
+
+@media screen and (max-width: 1279px){
+    .navigation {
+        margin-right: 48px;
+    }
+    .header__lang {
+        margin: 0 0 0 48px;
+    }
 }

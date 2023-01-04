@@ -25,3 +25,17 @@
 .footer__image_right {
     right: 80px;
 }
+
+@media screen and (max-width: 1279px) {
+    .footer__image {
+        height: 300px;
+    }
+
+    .footer__image_left {
+        left: 40px;
+    }
+    
+    .footer__image_right {
+        right: 40px;
+    }
+  }

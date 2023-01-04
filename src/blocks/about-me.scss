@@ -15,8 +15,8 @@
 }
 
 .about-me {
+    @include margin;
     padding-top: 180px;
-    margin: $margin;
     position: relative;
 }
 
@@ -100,4 +100,19 @@
     right: 40px;
     bottom: -20px;
     z-index: 1;
+}
+
+@media screen and (max-width: 1279px){
+    .about-me__header {
+        font-size: 65px;
+    }
+    .about-me__image {
+        height: 250px;
+        right: 25px;
+        bottom: -20px;
+    }
+
+    .about-me__stack {
+        max-width: 600px;
+    }
 }

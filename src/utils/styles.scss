@@ -4,8 +4,22 @@ $green: #0A5448;
 $grey: whitesmoke;
 
 $transition: 0.6s;
-$margin: 0 120px 50px;
-$padding-top: 130px;
+
+@mixin margin {
+    margin: 0 148px 50px;
+
+    @media screen and (max-width: 1279px) {
+        margin: 0 48px 50px;
+    }
+}
+
+@mixin padding-top {
+    padding-top: 130px;
+
+    @media screen and (max-width: 1279px) {
+        padding-top: 100px;
+    }
+}
 
 @mixin section-header {
     font-size: 56px;

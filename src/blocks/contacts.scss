@@ -1,8 +1,8 @@
 @import '../utils/styles.scss';
 
 .contacts {
-    margin: $margin;
-    padding-top: $padding-top;
+    @include margin;
+    @include padding-top;
     margin-bottom: 0;
     padding-bottom: 230px;
     display: flex;
@@ -70,3 +70,9 @@
 .contacts__span {
     text-shadow: 0 5px 0 $pink;
 }
+
+@media screen and (max-width: 1279px) {
+    .contacts {
+        padding-bottom: 50px;
+    }
+  }
