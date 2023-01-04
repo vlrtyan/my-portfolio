@@ -57,3 +57,20 @@
         margin: 0 0 0 24px;
     }
 }
+
+@media screen and (max-width: 1023px){
+    .navigation {
+        margin-right: 16px;
+    }
+    .header__lang {
+        margin: 0 0 0 16px;
+    }
+
+    .navigation__link {
+        font-size: 12px;
+    }
+
+    .header__lang{
+        font-size: 12px;
+    }
+}
