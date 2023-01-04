@@ -116,3 +116,30 @@
         max-width: 600px;
     }
 }
+
+@media screen and (max-width: 1023px){
+    .about-me {
+        padding-top: 150px;
+    }
+
+    .about-me__header {
+        font-size: 56px;
+        margin-bottom: 80px;
+    }
+    .about-me__image {
+        display: none;
+    }
+
+    .about-me__stack {
+        max-width: 100%;
+    }
+
+    .about-me__portrait {
+        width: 300px;
+        margin-right: 40px;
+    }
+    
+    .about-me__bio {
+        margin-right: 30px;
+    }
+}

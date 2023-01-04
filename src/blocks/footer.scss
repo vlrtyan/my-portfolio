@@ -1,41 +1,55 @@
-@import '../utils/styles.scss';
+@import "../utils/styles.scss";
 
 .footer {
-    background-color: $pink;
-    padding: 25px 120px;
-    position: relative;
+  background-color: $pink;
+  padding: 25px 120px;
+  position: relative;
 }
 
 .footer__copyright {
-    margin: 0;
-    text-align: center;
+  margin: 0;
+  text-align: center;
 }
 
 .footer__image {
-    height: 450px;
-    position: absolute;
-    bottom: 0;
+  height: 450px;
+  position: absolute;
+  bottom: 0;
 }
 
 .footer__image_left {
-    left: 80px;
-    transform: scale(-1, 1);
+  left: 80px;
+  transform: scale(-1, 1);
 }
 
 .footer__image_right {
-    right: 80px;
+  right: 80px;
 }
 
 @media screen and (max-width: 1279px) {
-    .footer__image {
-        height: 300px;
-    }
-
-    .footer__image_left {
-        left: 40px;
-    }
-    
-    .footer__image_right {
-        right: 40px;
-    }
+  .footer__image {
+    height: 300px;
   }
+
+  .footer__image_left {
+    left: 40px;
+  }
+
+  .footer__image_right {
+    right: 40px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__image {
+    height: 450px;
+  }
+
+  .footer__image_left {
+    left: 20px;
+  }
+
+  .footer__image_right {
+    right: 20px;
+  }
+}

@@ -115,12 +115,44 @@
 }
 
 @media screen and (max-width: 1279px) {
-
   .project {
     column-gap: 70px;
   }
 
   .project__image {
     height: 200px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 120px;
+    column-gap: 120px;
+  }
+
+  .project__info {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project__image {
+    height: 300px;
+  }
+  
+  .project__name {
+    max-width: 600px;
+  }
+
+  .project__description {
+    text-align: center;
+  }
+
+  .project__stack {
+    justify-content: center;
   }
 }

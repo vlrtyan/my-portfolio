@@ -1,78 +1,88 @@
-@import '../utils/styles.scss';
+@import "../utils/styles.scss";
 
 .contacts {
-    @include margin;
-    @include padding-top;
-    margin-bottom: 0;
-    padding-bottom: 230px;
-    display: flex;
-    flex-direction: column;
-    align-items: center
+  @include margin;
+  @include padding-top;
+  margin-bottom: 0;
+  padding-bottom: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contacts__header {
-    @include section-header;
-    margin-bottom: 90px;
-    align-self: flex-start;
+  @include section-header;
+  margin-bottom: 90px;
+  align-self: flex-start;
 }
 
 .contacts__text {
-    margin: 0 auto 50px;
-    text-align: center;
-    line-height: 1.7;
-    font-size: 20px;
-    font-weight: 400;
+  margin: 0 auto 50px;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 20px;
+  font-weight: 400;
 
-    &:last-of-type {
-        margin-bottom: 15px;
-    }
+  &:last-of-type {
+    margin-bottom: 15px;
+  }
 }
 
 .contacts__list {
-    @include list;
-    margin: 0 auto 20px;
-    display: flex;
-    flex-direction: row;
-    gap: 18px;
+  @include list;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
 }
 
 .social-media {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: $green;
-    text-decoration: none;
-    margin-right: 15px;
-    transition: $transition;
-    width: fit-content;
-    font-weight: 400;
-    font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: $green;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: $transition;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 18px;
 
-    &:last-child {
-        margin-right: 0;
-    }
+  &:last-child {
+    margin-right: 0;
+  }
 
-    &:hover {
-        opacity: 0.5;
-    }
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .social-media__logo {
-    height: 22px;
-    margin-right: 5px;
+  height: 22px;
+  margin-right: 5px;
 }
 
 .contacts__button {
-    @include button;
-    font-size: 18px;
+  @include button;
+  font-size: 18px;
 }
 
 .contacts__span {
-    text-shadow: 0 5px 0 $pink;
+  text-shadow: 0 5px 0 $pink;
 }
 
 @media screen and (max-width: 1279px) {
-    .contacts {
-        padding-bottom: 50px;
-    }
+  .contacts {
+    padding-bottom: 50px;
   }
+}
+
+@media screen and (max-width: 1023px) {
+  .contacts {
+    padding-bottom: 380px;
+  }
+
+  .contacts__header {
+    margin-bottom: 150px;
+  }
+}
