@@ -83,10 +83,6 @@
     padding-bottom: 200px;
   }
 
-  .contacts__header {
-    margin-bottom: 110px;
-  }
-
   .contacts__list {
     flex-direction: column;
     gap: 25px;
@@ -109,15 +105,15 @@
     padding-bottom: 100px;
   }
 
-  .contacts__header {
-    margin-bottom: 100px;
-  }
-
   .contacts__text {
     font-size: 18px;
   }
 
   .social-media {
     font-size: 18px;
+  }
+
+  .contacts__button {
+    margin-bottom: 50px;
   }
 }

@@ -1,29 +1,29 @@
-import './index.scss';
+import "./index.scss";
 
 const roles = [
-  "футбольная фанатка",
-  "киноманка",
-  "роль 3",
-  "роль 4"
+  "и футбольная фанатка",
+  "и киноманка",
+  "и люблю стендап",
+  "и катаюсь на коньках",
 ];
 
-const role = document.querySelector('.role');
-
-function getRandomElement(arr) {
-  const randIndex = Math.floor(Math.random() * arr.length);
-  return arr[randIndex];
-}
+const role = document.querySelector(".role");
+let i = 1;
 
 function changeRole() {
-  role.textContent = getRandomElement(roles);
+  role.textContent = roles[i];
+  if (i === roles.length - 1) {
+    i = 0;
+  }
+  i++;
 }
 
 setInterval(changeRole, 5000);
 
-document.addEventListener('click', function(event) {
-  if (event.target.matches('.navigation__link')) {
+document.addEventListener("click", function (event) {
+  if (event.target.matches(".navigation__link")) {
     event.preventDefault();
     let element = document.getElementById(event.target.dataset.target);
-    element.scrollIntoView({behavior: "smooth"});
+    element.scrollIntoView({ behavior: "smooth" });
   }
 });

@@ -14,8 +14,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 140px;
+  // margin-bottom: 140px;
   column-gap: 120px;
+  padding-bottom: 60px;
+  border-bottom: dotted 3px $pink;
+  margin-bottom: 80px;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -37,10 +40,6 @@
   margin: 0;
   padding-right: 20px;
   border-right: 8px solid $pink;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 370px;
 }
 
 .project__description {
@@ -62,20 +61,12 @@
 .project__technology {
   @include bubble;
   background-color: rgba(1, 1, 1, 0.1);
-
-  &:hover {
-    background-color: rgba(243, 214, 244, 0.3);
-  }
 }
 
 .project__type {
   @include bubble;
   background-color: #0a5448;
   color: rgb(225, 225, 225);
-
-  &:hover {
-    background-color: rgba(10, 84, 72, 0.8);
-  }
 }
 
 .project__links {
@@ -85,7 +76,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 12px;
+  gap: 15px;
 }
 
 .project-link {
@@ -151,9 +142,6 @@
   }
 
   .project__name {
-    max-width: fit-content;
-    white-space: break-spaces;
-    overflow: visible;
     border: none;
     padding-right: 0;
     text-shadow: 1px 0 5px rgb(112, 112, 112);
