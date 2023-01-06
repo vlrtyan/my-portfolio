@@ -37,15 +37,7 @@
 }
 
 .header__lang {
-  text-decoration: none;
-  color: $green;
   margin: 0 0 0 148px;
-  font-weight: 900;
-  font-size: 18px;
-
-  &:hover {
-    text-shadow: 0 7px 0 $pink;
-  }
 }
 
 @media screen and (max-width: 1279px) {
@@ -64,6 +56,11 @@
   .header__lang {
     margin: 0 0 0 24px;
   }
+
+  .navigation__link {
+    &:hover {
+      text-shadow: none;
+    }
 }
 
 @media screen and (max-width: 767px) {

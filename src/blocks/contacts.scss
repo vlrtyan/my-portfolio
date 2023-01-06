@@ -98,6 +98,12 @@
       margin-bottom: 30px;
     }
   }
+
+  .social-media {
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {

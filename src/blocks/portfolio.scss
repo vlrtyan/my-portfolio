@@ -158,6 +158,12 @@
   .project__links {
     gap: 20px;
   }
+
+  .project-link {
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {

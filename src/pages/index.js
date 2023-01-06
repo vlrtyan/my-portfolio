@@ -14,8 +14,9 @@ function changeRole() {
   role.textContent = roles[i];
   if (i === roles.length - 1) {
     i = 0;
+  } else {
+    i++;
   }
-  i++;
 }
 
 setInterval(changeRole, 5000);
