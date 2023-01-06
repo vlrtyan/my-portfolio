@@ -14,14 +14,15 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  // margin-bottom: 140px;
   column-gap: 120px;
-  padding-bottom: 60px;
+  padding-bottom: 70px;
   border-bottom: dotted 3px $pink;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 
   &:last-of-type {
     margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
   }
 }
 
@@ -35,7 +36,7 @@
 
 .project__name {
   color: $pink;
-  text-shadow: 5px 5px 5px rgb(157, 157, 157);
+  text-shadow: 5px 5px 5px rgb(130, 130, 130);
   font-size: 36px;
   margin: 0;
   padding-right: 20px;
@@ -121,7 +122,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 120px;
     column-gap: 120px;
   }
 
@@ -144,7 +144,6 @@
   .project__name {
     border: none;
     padding-right: 0;
-    text-shadow: 1px 0 5px rgb(112, 112, 112);
   }
 
   .project__description {
@@ -163,7 +162,8 @@
 
 @media screen and (max-width: 767px) {
   .project {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 
   .project__info {
@@ -176,6 +176,7 @@
 
   .project__name {
     font-size: 24px;
+    text-shadow: 3px 3px 3px rgb(130, 130, 130);
   }
 
   .project__description {
