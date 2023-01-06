@@ -61,18 +61,18 @@
     &:hover {
       text-shadow: none;
     }
-}
+  }
 
-@media screen and (max-width: 767px) {
-  .navigation {
-    margin-right: 16px;
-  }
-  .header__lang {
-    margin: 0 0 0 16px;
-    font-size: 14px;
-  }
-  .navigation__link {
-    font-size: 14px;
-    margin-right: 15px;
+  @media screen and (max-width: 767px) {
+    .navigation {
+      margin-right: 16px;
+    }
+    .header__lang {
+      margin: 0 0 0 16px;
+    }
+    .navigation__link {
+      font-size: 14px;
+      margin-right: 15px;
+    }
   }
 }
