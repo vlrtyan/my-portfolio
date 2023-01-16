@@ -10,7 +10,7 @@
 <body>
     <div class="page">
         <header class="header">
-            <a class="header__lang navigation__link" href="#">En</a>
+            <a class="header__lang navigation__link" href="https://vlrtyan.github.io/my-portfolio-english">En</a>
             <nav class="navigation">
                 <a class="navigation__link" href="#about-me" data-target="about-me">Обо мне</a>
                 <a class="navigation__link" href="#portfolio" data-target="portfolio">Мои работы</a>
@@ -24,16 +24,19 @@
                     Валерия,
                     я<br>front-end разработчица<br><span class="role about-me__span">и футбольная фанатка</span></h1>
                 <div class="about-me__info">
-                    <img class="about-me__portrait" src="<%=require('./images/me.png')%>" alt="Валерия Тян">
-                    <p class="about-me__bio"> Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
-                        Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
-                        Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
-                        Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</p>
+                    <img class="about-me__portrait" src="<%=require('./images/me.webp')%>" alt="Валерия Тян">
+                    <p class="about-me__bio">Я увлеченная, внимательная к UX и деталям front-end разработчица. В 2022 году я <a class="span__link"
+                            href="https://drive.google.com/file/d/1OGOsL-8cuL7OX45c-ZuW9i609-PUikvA/view?usp=share_link"
+                            target="_blank">завершила</a>
+                        курс Яндекс Практикума по Веб-разработке, а также <a class="span__link"
+                        href="https://drive.google.com/file/d/1X_nMVkAdJmuc2iaNJjAxw38jFIIxz2Y2/view?usp=share_link"
+                        target="_blank">поучаствовала</a> в хакатоне Design&Web. Сейчас я ищу новые возможности для развития, работаю над своими pet-проектами и изучаю Typescript.</p>
                 </div>
                 <ul class="about-me__stack">
                     <li class="about-me__subtitle">ЧТО Я УМЕЮ</li>
                     <li class="about-me__technology">HTML</li>
                     <li class="about-me__technology">CSS</li>
+                    <li class="about-me__technology">Sass</li>
                     <li class="about-me__technology">JavaScript</li>
                     <li class="about-me__technology">React</li>
                     <li class="about-me__technology">Node.js</li>
@@ -45,7 +48,6 @@
                 <ul class="about-me__stack">
                     <li class="about-me__subtitle">ЧТО Я ИЗУЧАЮ</li>
                     <li class="about-me__technology">Typescript</li>
-                    <li class="about-me__technology">Sass</li>
                 </ul>
                 <img class="about-me__image" src="<%=require('./images/plant.webp')%>" alt="4 растения в бутылках">
             </section>
@@ -75,10 +77,9 @@
                                 <li class="project__technology">Express.js</li>
                                 <li class="project__technology">MongoDB</li>
                                 <li class="project__technology">API</li>
-                                <li class="project__type">Учебный проект</li>
                             </ul>
                         </div>
-                        <img class="project__image" src="<%=require('./images/movies-mockup.png')%>"
+                        <img class="project__image" src="<%=require('./images/movies-mockup.webp')%>"
                             alt="Мокап ноутбука с сайтом">
                     </div>
                     <div class="project project_view_reverse">
@@ -96,7 +97,7 @@
                                                 alt="Иконка вебсайта"></a></li>
                                 </ul>
                             </div>
-                            <p class="project__description">Описание проекта</p>
+                            <p class="project__description">Сервис для обмена фотографиями красивых мест в России.</p>
                             <ul class="project__stack">
                                 <li class="project__technology">HTML</li>
                                 <li class="project__technology">CSS</li>
@@ -105,10 +106,9 @@
                                 <li class="project__technology">MongoDB</li>
                                 <li class="project__technology">API</li>
                                 <li class="project__technology">Webpack</li>
-                                <li class="project__type">Учебный проект</li>
                             </ul>
                         </div>
-                        <img class="project__image" src="<%=require('./images/mesto-mockup.png')%>"
+                        <img class="project__image" src="<%=require('./images/mesto-mockup.webp')%>"
                             alt="Мокап ноутбука с сайтом">
                     </div>
                     <div class="project">
@@ -131,10 +131,9 @@
                                 <li class="project__technology">HTML</li>
                                 <li class="project__technology">CSS</li>
                                 <li class="project__technology">JavaScript</li>
-                                <li class="project__type">Учебный проект</li>
                             </ul>
                         </div>
-                        <img class="project__image" src="<%=require('./images/russian-travel-moclup.png')%>"
+                        <img class="project__image" src="<%=require('./images/russian-travel-mockup.webp')%>"
                             alt="Мокап ноутбука с сайтом">
                     </div>
                     <div class="project project_view_reverse">
@@ -152,17 +151,17 @@
                                                 alt="Иконка вебсайта"></a></li>
                                 </ul>
                             </div>
-                            <p class="project__description">Узнайте о современных и эффективных подходах к обучению,
+                            <p class="project__description">Статичный сайт о современных и эффективных подходах к
+                                обучению,
                                 которые вы можете использовать в своей жизни.</p>
                             <ul class="project__stack">
                                 <li class="project__technology">HTML</li>
                                 <li class="project__technology">CSS</li>
                                 <li class="project__technology">JavaScript</li>
                                 <li class="project__technology">Анимация</li>
-                                <li class="project__type">Учебный проект</li>
                             </ul>
                         </div>
-                        <img class="project__image" src="<%=require('./images/how-to-learn-mockup.png')%>"
+                        <img class="project__image" src="<%=require('./images/how-to-learn-mockup.webp')%>"
                             alt="Мокап ноутбука с сайтом">
                     </div>
                 </div>
