@@ -1,10 +1,41 @@
 @import "../utils/styles.scss";
 
+@keyframes running-line {
+  0%{
+    transform: translate(0, 0);
+  }
+  
+  100%{
+    transform: translate(-100%, 0);
+  }
+}
+
 .contacts {
-  @include margin;
   @include padding-top;
   margin-bottom: 0;
-  padding-bottom: 150px;
+  padding-bottom: 60px;
+  background-image: url(../images/contacts-background.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-color: white;
+    opacity: 0.4;
+  }
+}
+
+.contacts__container {
+  position: relative;
+  z-index: 1;
+  @include margin;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,8 +43,12 @@
 
 .contacts__header {
   @include section-header;
-  margin-bottom: 90px;
   align-self: flex-start;
+}
+
+.contacts__tip {
+  color: white;
+  font-size: 30px;
 }
 
 .contacts__text {
@@ -33,7 +68,9 @@
   margin: 0 auto 20px;
   display: flex;
   flex-direction: row;
-  gap: 18px;
+  gap: 30px;
+  animation: running-line 10s infinite linear;
+  padding-left: 100%;
 }
 
 .social-media {
@@ -42,15 +79,10 @@
   align-items: center;
   color: $green;
   text-decoration: none;
-  margin-right: 15px;
   transition: $transition;
   width: fit-content;
   font-weight: 400;
-  font-size: 18px;
-
-  &:last-child {
-    margin-right: 0;
-  }
+  font-size: 16px;
 
   &:hover {
     opacity: 0.5;
@@ -72,6 +104,68 @@
   text-shadow: 0 5px 0 $pink;
 }
 
+.contacts__form {
+  width: 470px;
+  background-color: $grey;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
+  width: 350px;
+}
+
+.contact-form__name {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.contact-form__description {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.contact-form__input {
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  border-bottom: 1px solid rgba($color: $green, $alpha: 0.3);
+  outline: none;
+  font-size: 14px;
+  color: $green;
+  transition: $transition;
+  background-color: transparent;
+
+  &::placeholder {
+    color: $green;
+    opacity: 0.5;
+  }
+
+  &:focus {
+    border-bottom: 1px solid $green;
+  }
+}
+
+.contact-form__input_type_message {
+  resize: none;
+  margin-bottom: 40px;
+}
+
+.contact-form__button {
+  @include button;
+  width: 150px;
+  align-self: center;
+}
+
 @media screen and (max-width: 1279px) {
   .contacts {
     padding-bottom: 50px;
@@ -89,8 +183,8 @@
   }
 
   .contacts__button {
-  margin-bottom: 100px;
-}
+    margin-bottom: 100px;
+  }
 
   .contacts__text {
     margin-bottom: 30px;

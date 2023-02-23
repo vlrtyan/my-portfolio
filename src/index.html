@@ -25,12 +25,14 @@
                     я<br>front-end разработчица<br><span class="role about-me__span">и футбольная фанатка</span></h1>
                 <div class="about-me__info">
                     <img class="about-me__portrait" src="<%=require('./images/me.webp')%>" alt="Валерия Тян">
-                    <p class="about-me__bio">Я увлеченная, внимательная к UX и деталям front-end разработчица. В 2022 году я <a class="span__link"
+                    <p class="about-me__bio">Я увлеченная, внимательная к UX и деталям front-end разработчица. В 2022
+                        году я <a class="span__link"
                             href="https://drive.google.com/file/d/1OGOsL-8cuL7OX45c-ZuW9i609-PUikvA/view?usp=share_link"
                             target="_blank">завершила</a>
                         курс Яндекс Практикума по Веб-разработке, а также <a class="span__link"
-                        href="https://drive.google.com/file/d/1X_nMVkAdJmuc2iaNJjAxw38jFIIxz2Y2/view?usp=share_link"
-                        target="_blank">поучаствовала</a> в хакатоне Design&Web. Сейчас я ищу новые возможности для развития, работаю над своими pet-проектами и изучаю Typescript.</p>
+                            href="https://drive.google.com/file/d/1X_nMVkAdJmuc2iaNJjAxw38jFIIxz2Y2/view?usp=share_link"
+                            target="_blank">поучаствовала</a> в хакатоне Design&Web. Сейчас я ищу новые возможности для
+                        развития, работаю над своими pet-проектами и изучаю Typescript.</p>
                 </div>
                 <ul class="about-me__stack">
                     <li class="about-me__subtitle">ЧТО Я УМЕЮ</li>
@@ -167,32 +169,41 @@
                 </div>
             </section>
             <section class="contacts" id="contacts">
-                <h2 class="contacts__header">Контакты</h2>
-                <p class="contacts__text">Если вы хотите сделать совместный проект, получить моё резюме<br>или просто
-                    познакомиться, жмите:
-                </p>
-                <a class="contacts__button" href="mailto:vlrtyan@yandex.ru">Написать&nbsp;письмо</a>
-                <p class="contacts__text"><span class="contacts__span">Можно также найти меня здесь:</span></p>
-                <ul class="contacts__list">
-                    <li><a class="social-media" href="https://t.me/vlrtyan" target="_blank"><img
-                                class="social-media__logo" src="<%=require('./images/logos/telegram-logo.svg')%>"
-                                alt="Логотип Telegram">Telegram</a></li>
-                    <li><a class="social-media" href="https://www.linkedin.com/in/vlrtyan/" target="_blank"><img
-                                class="social-media__logo" src="<%=require('./images/logos/linkedin-logo.svg')%>"
-                                alt="Логотип LinkedIn">LinkedIn</a></li>
-                    <li><a class="social-media" href="https://github.com/vlrtyan" target="_blank"><img
-                                class="social-media__logo" src="<%=require('./images/logos/github-logo.svg')%>"
-                                alt="Логотип GitHub">GitHub</a></li>
-                </ul>
+                <div class="contacts__container">
+                    <h2 class="contacts__header">Контакты</h2>
+                    <div class="contacts__form">
+                        <form class="contact-form">
+                            <h3 class="contact-form__name">Связаться</h3>
+                            <p class="contact-form__description">Если хотите поработать вместе, получить моё резюме или
+                                просто поздороваться, <br>не стесняйтесь :)</p>
+                            <input class="contact-form__input contact-form__input_type_name" placeholder="Имя"
+                                type="text" required>
+                            <input class="contact-form__input contact-form__input)type_email" placeholder="Email"
+                                type="email" required>
+                            <textarea class="contact-form__input contact-form__input_type_message"
+                                placeholder="Сообщение" rows="5" required></textarea>
+                            <button class="contact-form__button" disabled>Отправить</button>
+                        </form>
+                        <ul class="contacts__list">
+                            <li><a class="social-media" href="https://t.me/vlrtyan" target="_blank"><img
+                                        class="social-media__logo"
+                                        src="<%=require('./images/logos/telegram-logo.svg')%>"
+                                        alt="Логотип Telegram">Telegram</a></li>
+                            <li><a class="social-media" href="https://www.linkedin.com/in/vlrtyan/" target="_blank"><img
+                                        class="social-media__logo"
+                                        src="<%=require('./images/logos/linkedin-logo.svg')%>"
+                                        alt="Логотип LinkedIn">LinkedIn</a></li>
+                            <li><a class="social-media" href="https://github.com/vlrtyan" target="_blank"><img
+                                        class="social-media__logo" src="<%=require('./images/logos/github-logo.svg')%>"
+                                        alt="Логотип GitHub">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         </main>
 
         <footer class="footer">
             <p class="footer__copyright">&copy; Валерия Тян, 2023</p>
-            <img class="footer__image footer__image_left" src="<%=require('./images/leaves.webp')%>"
-                alt="Высокое зеленое растение">
-            <img class="footer__image footer__image_right" src="<%=require('./images/leaves.webp')%>"
-                alt="Высокое зеленое растение">
         </footer>
 
     </div>

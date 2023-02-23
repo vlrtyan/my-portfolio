@@ -3,6 +3,7 @@
 .portfolio {
   @include margin;
   @include padding-top;
+  margin-bottom: 100px;
 }
 
 .portfolio__header {
