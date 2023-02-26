@@ -24,4 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
       element.scrollIntoView({ behavior: "smooth" });
     }
   });
+
+  //управление формой
+  const form = document.querySelector(".pageclip-form");
+  Pageclip.form(form, {
+    onResponse: function (error, response) {
+      // отключить дефолтный tooltip
+      return false;
+    },
+  });
 });
