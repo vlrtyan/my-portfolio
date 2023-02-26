@@ -2,11 +2,15 @@
 
 @keyframes running-line {
   0%{
-    transform: translate(0, 0);
+    transform: translate(70px, 0);
   }
   
+  50%{
+    transform: translate(-70px, 0);
+  }
+
   100%{
-    transform: translate(-100%, 0);
+    transform: translate(70px, 0);
   }
 }
 
@@ -37,13 +41,14 @@
   z-index: 1;
   @include margin;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .contacts__header {
   @include section-header;
-  align-self: flex-start;
+  margin: 0;
+  margin-right: 80px;
 }
 
 .contacts__tip {
@@ -65,12 +70,13 @@
 
 .contacts__list {
   @include list;
-  margin: 0 auto 20px;
+  $margin-side: calc(100% - 330px);
+  margin: 0 0 20px;
   display: flex;
   flex-direction: row;
   gap: 30px;
-  animation: running-line 10s infinite linear;
-  padding-left: 100%;
+  animation: running-line 6s infinite linear;
+  width: 330px;
 }
 
 .social-media {
@@ -118,6 +124,7 @@
   display: flex;
   flex-direction: column;
   padding: 40px 60px;
+  margin-bottom: 20px;
   width: 350px;
 }
 
@@ -162,8 +169,18 @@
 
 .contact-form__button {
   @include button;
-  width: 150px;
+  width: 180px;
   align-self: center;
+}
+
+.pageclip-form__submit::after {
+  border-color: rgba($color: $pink, $alpha: 0.8);
+  border-left-color: $pink;
+}
+
+.pageclip-form__submit:after {
+  width: 15px;
+  height: 15px;
 }
 
 @media screen and (max-width: 1279px) {

@@ -1,13 +1,6 @@
 import "./index.scss";
+import { roles, role } from "../utils/constants";
 
-const roles = [
-  "и футбольная фанатка",
-  "и киноманка",
-  "и люблю стендап",
-  "и катаюсь на коньках",
-];
-
-const role = document.querySelector(".role");
 let i = 1;
 
 function changeRole() {
@@ -19,12 +12,16 @@ function changeRole() {
   }
 }
 
-setInterval(changeRole, 5000);
+document.addEventListener("DOMContentLoaded", function () {
+  //смена ролей
+  setInterval(changeRole, 5000);
 
-document.addEventListener("click", function (event) {
-  if (event.target.matches(".navigation__link")) {
-    event.preventDefault();
-    let element = document.getElementById(event.target.dataset.target);
-    element.scrollIntoView({ behavior: "smooth" });
-  }
+  //плавный скролл
+  document.addEventListener("click", function (event) {
+    if (event.target.matches(".navigation__link")) {
+      event.preventDefault();
+      let element = document.getElementById(event.target.dataset.target);
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  });
 });

@@ -172,17 +172,19 @@
                 <div class="contacts__container">
                     <h2 class="contacts__header">Контакты</h2>
                     <div class="contacts__form">
-                        <form class="contact-form">
+                        <form class="pageclip-form contact-form"
+                            action="https://send.pageclip.co/b09tnSiJYSjdrCFTPzcXhguBfiYLRzio" method="post">
                             <h3 class="contact-form__name">Связаться</h3>
                             <p class="contact-form__description">Если хотите поработать вместе, получить моё резюме или
                                 просто поздороваться, <br>не стесняйтесь :)</p>
-                            <input class="contact-form__input contact-form__input_type_name" placeholder="Имя"
-                                type="text" required>
-                            <input class="contact-form__input contact-form__input)type_email" placeholder="Email"
-                                type="email" required>
-                            <textarea class="contact-form__input contact-form__input_type_message"
-                                placeholder="Сообщение" rows="5" required></textarea>
-                            <button class="contact-form__button" disabled>Отправить</button>
+                            <input class="contact-form__input contact-form__input_type_name" name="name"
+                                placeholder="Имя" type="text" required autocomplete="off">
+                            <input class="contact-form__input contact-form__input)type_email" name="email"
+                                placeholder="Email" type="email" required autocomplete="off">
+                            <textarea class="contact-form__input contact-form__input_type_message" name="message"
+                                placeholder="Сообщение" rows="5" required autocomplete="off"></textarea>
+                            <button class="contact-form__button pageclip-form__submit"
+                                type="submit"><span>Отправить</span></button>
                         </form>
                         <ul class="contacts__list">
                             <li><a class="social-media" href="https://t.me/vlrtyan" target="_blank"><img
@@ -207,6 +209,7 @@
         </footer>
 
     </div>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
 
 </html>
